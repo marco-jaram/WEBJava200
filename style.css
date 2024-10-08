@@ -1,0 +1,87 @@
+
+:root {
+    --background-color: #000108;
+    --text-color: #d4d4d4;
+    --heading-color: #c8d4d8;
+    --container-background: #050000;
+    --progress-bar-background: #3c3f41;
+    --progress-color: #53ce22;
+    --today-marker-color: #5e4b3c;
+    --button-background: #bcc728;
+    --button-text-color: #000000;
+    --button-hover-background: #00b327;
+    --button-hover-text-color: #fff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    color: var(--heading-color);
+}
+
+.progress-container {
+    background-color: var(--container-background);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: var(--progress-bar-background);
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: var(--progress-color);
+    height: 100%;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.today-marker {
+    position: relative;
+    top: -20px;
+    width: 3px;
+    height: 20px;
+    background-color: var(--today-marker-color);
+}
+
+.project-info {
+    margin-top: 20px;
+}
+
+.cta-button {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--button-hover-background);
+    color: var(--button-hover-text-color);
+}
